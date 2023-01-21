@@ -47,7 +47,7 @@
                                         <td class="action" data-title="Remove"><a href="#" class="text-muted"><i class="fi-rs-trash"></i></a></td>
                                     </tr>
                                     <tr>
-                                        <td class="image"><img src="{{ asset('assets/imgs/shop/product-11-2.jp')}}g" alt="#"></td>
+                                        <td class="image"><img src="{{ asset('assets/imgs/shop/product-11-2.jpg')}}" alt="#"></td>
                                         <td class="product-des">
                                             <h5 class="product-name"><a href="product-details.html">Amazon Essentials Women's Tank</a></h5>
                                             <p class="font-xs">Sit at ipsum amet clita no est,<br> sed amet sadipscing et gubergren</p>
