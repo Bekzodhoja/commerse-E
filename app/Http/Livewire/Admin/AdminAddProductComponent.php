@@ -26,7 +26,7 @@ class AdminAddProductComponent extends Component
     public $category_id;
 
 
-    public function generateSlug()
+    public function genereteSlug()
     {
         $this->slug = Str::slug($this->name);
     }
@@ -57,8 +57,8 @@ class AdminAddProductComponent extends Component
         $product->stock_status = $this->stock_status;
         $product->featured = $this->featured;
         $product->quantity = $this->quantity;
-        $imageName = Carbon::now()->timestamp . '.' . $this->image->extension();
-        $this->image->saveAs('products', $imageName);
+        $imageName = Carbon::now()->timestamp.'.'.$this->image->extension();
+        $this->image->storeAs('products', $imageName);
         $product->image = $imageName;
         $product->category_id = $this->category_id;
         $product->save();
