@@ -88,7 +88,7 @@
                     <div class="col-md-12 text-center">
                          <h4 class="pb-3">Do you went to delete this record?</h4>
                          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#deleteConfirmation">Cancel</button>
-                         <button type="button" class="btn btn-danger" onclick="deleteCategory()">Delete</button>
+                         <button type="button" class="btn btn-danger" onclick="deleteSlide()">Delete</button>
                     </div>
                 </div>
             </div>
@@ -100,12 +100,12 @@
     <script>
         function deleteConfirmation(id)
         {
-            @this.set('category_id',id);
+            @this.set('slide_id',id);
             $('#deleteConfirmation').modal('show');
         }
-        function deleteCategory()
+        function deleteSlide()
         {
-            @this.call('deleteCategory');
+            @this.call('deleteSlide');
             $('#deleteConfirmation').modal('hide');
         }
 
